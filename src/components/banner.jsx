@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import { getBannerData } from "../utility";
+import banner from "../assets/images/banner-img.png";
 
 export const Banner = () => {
   const [start, setStart] = useState(new Date("09/01/2022"));
@@ -47,10 +48,7 @@ export const Banner = () => {
         </p>
       </div>
       <div className="home-img-container col-sm-6">
-        <img
-          src={require("../assets/images/banner-img.png")}
-          alt="Home Screen"
-        />
+        <img src={banner} alt="Home Screen" />
       </div>
     </div>
   );
